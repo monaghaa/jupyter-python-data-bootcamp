@@ -1,16 +1,18 @@
-name: jupyter-python-data-bootcamp
+name: plasmabio-template-python
+# channels priority
+# see https://bioconda.github.io/
+# conda-forge has highest prioriy
 channels:
-  - conda-forge
-  - anaconda
   - defaults
+  - bioconda
+  - conda-forge
 dependencies:
-  - python=3.9.6
+  - python>=3.7
   - numpy
   - pandas
   - matplotlib
-  - jupyterlab=3.1.1
-  - bs4
-  - seaborn
-  - plotly
-  - urllib3
-  - csvkit
+  - jupyterlab=2
+  - nodejs
+  - nbresuse
+  - psutil
+  - pip
