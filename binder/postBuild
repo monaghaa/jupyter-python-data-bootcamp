@@ -1,0 +1,6 @@
+(base) OIT-RC-L-010:binder monaghaa$ ls
+jupyter labextension install \
+  @jupyter-widgets/jupyterlab-manager \
+  jupyterlab-topbar-extension \
+  jupyterlab-system-monitor \
+  jupyterlab-topbar-text
