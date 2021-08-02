@@ -5,3 +5,5 @@ jupyter labextension install \
   jupyterlab-topbar-text
   
 mkdir /home/jovyan/work
+mkdir /home/jovyan/.jupyter
+echo "c.Spawner.default_url = '/tree'" > /home/jovyan/.jupyter/jupyter_notebook_config.py
