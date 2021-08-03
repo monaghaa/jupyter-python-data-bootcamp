@@ -3,13 +3,12 @@
 # Distributed under the terms of the Modified BSD License.
 
 set -e
-export JUPYTER_CONFIG_DIR=/opt/tljh/config/jupyterhub_config.d_python
 
 # Exec the specified command or fall back on bash
 if [ $# -eq 0 ]; then
     cmd=( "bash" )
 else
-    cmd=( "$@" )
+    cmd=( "$@ --Spawner.default_url=/tree" )
 fi
 
 run-hooks () {
