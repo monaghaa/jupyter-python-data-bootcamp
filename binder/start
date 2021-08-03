@@ -10,7 +10,7 @@ export DOCKER_DEFAULT_URL="/lab"
 if [ $# -eq 0 ]; then
     cmd=( "bash" )
 else
-    cmd=( "$@" )
+    cmd=( "$@ --SingleUserNotebookApp.default_url=/tree" )
 fi
 
 run-hooks () {
