@@ -5,4 +5,4 @@ jupyter labextension install \
   jupyterlab-topbar-text
   
 mkdir /home/jovyan/work
-echo "alias jupyterhub-singleuser='jupyterhub-singleuser --SingleUserNotebookApp.default_url=/lab'" >> ~/.bashrc
+sed -i "/SingleUserNotebookApp.default_url/c\                '--SingleUserNotebookApp.default_url=/lab'" /srv/conda/envs/notebook/lib/python3.9/site-packages/jupyterhub/spawner.py
