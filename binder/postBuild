@@ -6,4 +6,4 @@ jupyter labextension install \
   
 mkdir /home/jovyan/work
 mkdir /home/jovyan/.jupyter
-echo "c.Spawner.default_url = '/tree'" > /home/jovyan/.jupyter/jupyter_notebook_config.py
+echo "c.Spawner.default_url = '/lab'" > /home/jovyan/.jupyter/jupyterhub_config.py
