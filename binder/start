@@ -4,11 +4,13 @@
 
 set -e
 
+export DOCKER_DEFAULT_URL="/lab"
+
 # Exec the specified command or fall back on bash
 if [ $# -eq 0 ]; then
     cmd=( "bash" )
 else
-    cmd=( "$@ --Spawner.default_url=/tree" )
+    cmd=( "$@" )
 fi
 
 run-hooks () {
